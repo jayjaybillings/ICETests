@@ -1,0 +1,131 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="sample">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="structure">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="file"/>
+                    <xs:element type="xs:string" name="format"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="framesets">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="frameset">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="file"/>
+                          <xs:element type="xs:string" name="format"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="stager">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="target"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="scattering">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="type"/>
+              <xs:element name="dsp">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="type"/>
+                    <xs:element type="xs:string" name="method"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="vectors">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="type"/>
+                    <xs:element name="scans">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="scan">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:float" name="from"/>
+                                <xs:element type="xs:float" name="to"/>
+                                <xs:element type="xs:byte" name="points"/>
+                                <xs:element name="base">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:byte" name="x"/>
+                                      <xs:element type="xs:byte" name="y"/>
+                                      <xs:element type="xs:byte" name="z"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="average">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="orientation">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="type"/>
+                          <xs:element name="vectors">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="type"/>
+                                <xs:element type="xs:string" name="algorithm"/>
+                                <xs:element type="xs:short" name="resolution"/>
+                                <xs:element type="xs:byte" name="seed"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="signal">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="file"/>
+                    <xs:element type="xs:string" name="fqt"/>
+                    <xs:element type="xs:string" name="fq0"/>
+                    <xs:element type="xs:string" name="fq"/>
+                    <xs:element type="xs:string" name="fq2"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="database">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="type"/>
+              <xs:element type="xs:string" name="file"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

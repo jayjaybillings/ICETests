@@ -1,0 +1,124 @@
+Number of Assemblies: 2
+Number of Axial Levels: 3
+Number of Pin Rows: 4
+Number of Pin Columns: 5
+
+
+Fuel Pin Difference
+
+Assembly 0
+Axial Level 0
+ 0 0.0  -0    0  -0.0  
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+Axial Level 1
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+Axial Level 2
+2 2 2 2 2
+2 2 2 2 2
+2 2 2 2 2
+2 2 2 2 2
+
+Assembly 1
+Axial Level 0
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+Axial Level 1
+2 2 2 2 2
+2 2 2 2 2
+2 2 2 2 2
+2 2 2 2 2
+Axial Level 2
+3 3 3 3 3
+3 3 3 3 3
+3 3 3 3 3
+3 3 3 3 3
+
+Fuel Pin Powers Uncertainties
+Assembly 0
+Axial Level 0
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+Axial Level 1
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+Axial Level 2
+2 2 2 2 2
+2 2 2 2 2
+2 2 2 2 2
+2 2 2 2 2
+
+Assembly 1
+Axial Level 0
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+Axial Level 1
+2 2 2 2 2
+2 2 2 2 2
+2 2 2 2 2
+2 2 2 2 2
+Axial Level 2
+-3 -3 -3 -3 -3
+-3 -3 -3 -3 -3
+-3 -3 -3 -3 -3
+-3 -3.0 -03 -3 -3
+
+---------- Radial Results ----------
+
+Radial Power
+
+Assembly 0
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+
+Assembly 1
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+
+Radial Power Difference
+
+Assembly 0
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+
+Assembly 1
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+
+Average Radial Power: 0
+RMS Radial Power: 1
+Average Radial Power Difference: 2
+RMS Radial Power Difference: 3
+
+---------- Axial Results ----------
+
+Axial Power
+4
+
+Axial Power Difference
+5
+
+Average Axial Power: 6
+RMS Axial Power: 7
+Average Axial Power Difference: 8
+RMS Axial Power Difference: 9

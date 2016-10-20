@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<xs:schema id="root" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="vectors">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="type" type="xs:string" minOccurs="0" />
+        <xs:element name="algorithm" type="xs:string" minOccurs="0" />
+        <xs:element name="resolution" type="xs:string" minOccurs="0" />
+        <xs:element name="seed" type="xs:string" minOccurs="0" />
+        <xs:element name="scans" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="scan" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="from" type="xs:string" minOccurs="0" />
+                    <xs:element name="to" type="xs:string" minOccurs="0" />
+                    <xs:element name="points" type="xs:string" minOccurs="0" />
+                    <xs:element name="base" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="x" type="xs:string" minOccurs="0" default="0" />
+                          <xs:element name="y" type="xs:string" minOccurs="0" default="0" />
+                          <xs:element name="z" type="xs:string" minOccurs="0" default="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="root" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="vectors" />
+        <xs:element name="sample">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="structure" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="file" type="xs:string" minOccurs="0" />
+                    <xs:element name="format" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="framesets" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="frameset" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="file" type="xs:string" minOccurs="0" />
+                          <xs:element name="format" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="stager">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="target" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="scattering">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="type" type="xs:string" minOccurs="0" />
+              <xs:element name="dsp" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="type" type="xs:string" minOccurs="0" />
+                    <xs:element name="method" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element ref="vectors" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element name="average" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="orientation" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="type" type="xs:string" minOccurs="0" />
+                          <xs:element ref="vectors" minOccurs="0" maxOccurs="unbounded" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="signal" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="file" type="xs:string" minOccurs="0" />
+                    <xs:element name="fqt" type="xs:string" minOccurs="0" />
+                    <xs:element name="fq0" type="xs:string" minOccurs="0" />
+                    <xs:element name="fq" type="xs:string" minOccurs="0" />
+                    <xs:element name="fq2" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="database">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="type" type="xs:string" minOccurs="0" />
+              <xs:element name="file" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

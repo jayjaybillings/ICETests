@@ -1,0 +1,20 @@
+[Required Options]
+option = invalue ; value, invalue ; Discrete 
+option2 = 1 ; 0, 10 ; Continuous
+tabbedOption = tabbValue ; ; Undefined
+spacedOption = spaceValue ; ; Undefined
+
+
+[First Section]
+section1var = nothing ; ; Undefined
+newvariable = newvalue  ; ; Undefined
+newTabbedOption	= tabbedValue ; ; Undefined
+newSpacedOption = spacedValue   ; ; Undefined
+
+
+[Second Section]
+section2var = nothing ; ; Undefined
+
+[Third Section]
+section3var = nope ; ; Undefined
+

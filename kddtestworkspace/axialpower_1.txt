@@ -1,0 +1,13 @@
+
+---------- Axial Results ----------
+
+Axial Power
+0.998
+
+Axial Power Difference
+0.0067
+
+Average Axial Power: 0.998
+RMS Axial Power: 0.998
+Average Axial Power Difference: 0.0067
+RMS Axial Power Difference: 0.0067
